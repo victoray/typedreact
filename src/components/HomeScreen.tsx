@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import SideBar from "./SideBar";
 import NavBar from "./NavBar";
+import Table from "./Table";
 
 
 const HomeScreen = () => {
@@ -11,6 +12,9 @@ const HomeScreen = () => {
             <SideBar visible={visible}/>
             <NavBar setVisible={setVisible} visible={visible}/>
             <div className="pusher">
+                <div className={"ui container"} style={{marginTop: "100px"}}>
+                    <Table/>
+                </div>
             </div>
         </div>
     );
