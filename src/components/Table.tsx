@@ -52,7 +52,7 @@ const Table = ({status = ""}) => {
     const [currentPage, setPage] = useState(1);
     const service = useGetSpecies(currentPage);
 
-    if (service.status !== "loaded" || status == "loading") {
+    if (service.status !== "loaded" || status === "loading") {
         return <Spinner/>;
     }
 
