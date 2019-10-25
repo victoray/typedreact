@@ -19,4 +19,4 @@ storiesOf("Table", module)
        Data is fetched from the api with axios, the data is paginated serverside, so the table requests data based on the current page.
       ~~~`,
             },
-        });
+        }).add("loading", () => <Table status={"loading"}/>);

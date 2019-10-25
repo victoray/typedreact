@@ -44,12 +44,15 @@ const createTable = (species: Species) => {
     });
 };
 
+interface Table {
+    status: string;
+}
 
-const Table = () => {
+const Table = ({status = ""}) => {
     const [currentPage, setPage] = useState(1);
     const service = useGetSpecies(currentPage);
 
-    if (service.status !== "loaded") {
+    if (service.status !== "loaded" || status == "loading") {
         return <Spinner/>;
     }
 
@@ -64,7 +67,7 @@ const Table = () => {
     });
 
     return (
-        <table className="ui fixed  padded table unstackable selectable striped blue">
+        <table className="ui fixed padded table unstackable selectable striped blue">
             <thead className={"full-width"}>
             <tr>
                 <th>Name</th>
