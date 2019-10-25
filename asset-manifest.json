@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/typedreact/static/js/main.17d789dc.chunk.js",
+    "main.js.map": "/typedreact/static/js/main.17d789dc.chunk.js.map",
+    "runtime-main.js": "/typedreact/static/js/runtime-main.ac5b6fa4.js",
+    "runtime-main.js.map": "/typedreact/static/js/runtime-main.ac5b6fa4.js.map",
+    "static/css/2.751fe2ed.chunk.css": "/typedreact/static/css/2.751fe2ed.chunk.css",
+    "static/js/2.de9022a4.chunk.js": "/typedreact/static/js/2.de9022a4.chunk.js",
+    "static/js/2.de9022a4.chunk.js.map": "/typedreact/static/js/2.de9022a4.chunk.js.map",
+    "index.html": "/typedreact/index.html",
+    "precache-manifest.c10518052e61de64349ad7286bd7b884.js": "/typedreact/precache-manifest.c10518052e61de64349ad7286bd7b884.js",
+    "service-worker.js": "/typedreact/service-worker.js",
+    "static/css/2.751fe2ed.chunk.css.map": "/typedreact/static/css/2.751fe2ed.chunk.css.map",
+    "static/media/semantic.min.css": "/typedreact/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac5b6fa4.js",
+    "static/css/2.751fe2ed.chunk.css",
+    "static/js/2.de9022a4.chunk.js",
+    "static/js/main.17d789dc.chunk.js"
+  ]
+}
