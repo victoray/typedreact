@@ -6,5 +6,5 @@ import {BrowserRouter} from "react-router-dom";
 
 storiesOf("NavBar", module)
     .addDecorator((story) => <BrowserRouter> {story()}</BrowserRouter>)
-    .add("default", () => <NavBar visible={false}/>)
-    .add("clicked", () => <NavBar visible={true}/>);
+    .add("default", () => <NavBar visible={false}/>);
+

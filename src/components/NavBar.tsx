@@ -5,19 +5,20 @@ interface NavBarProps {
     visible: boolean;
 }
 
-/*
- *NavBar Component: Displays all menu items in  a horizontal navbar with a right alinged dropdown menu and a search bar;
+/**
+ *
+ * NavBar Component: Displays all menu items in  a horizontal navbar with a right alinged dropdown menu and a search bar
  */
 const NavBar = ({setVisible, visible}: NavBarProps) => {
 
     return (
-        <div className="ui top fixed menu">
+        <div className="ui top fixed menu borderless">
             <a className="item" onClick={() => setVisible(!visible)}>
                 <i className="sidebar icon"/>
                 Menu
             </a>
             <div className="ui  category search item">
-                <div className="ui large icon input" style={{width: "100%"}}>
+                <div className="ui large icon input">
                     <input className="prompt" type="text" placeholder="Search..."/>
                     <i className="search link icon"/>
                 </div>
@@ -29,7 +30,7 @@ const NavBar = ({setVisible, visible}: NavBarProps) => {
                          alt={""}/>
                     <span>Username</span> <i className="dropdown icon"/>
                     <div className="menu">
-                        <div className="item">Logout <i className="sign-out icon"/></div>
+                        <div className="item link">Logout <i className="sign-out icon"/></div>
                     </div>
                 </div>
             </div>

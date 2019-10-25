@@ -2,7 +2,7 @@ import React from "react";
 
 
 /**
- * Displays a spinning loaders during data loading.
+ * Displays a spinning loader during data loading.
  */
 const Spinner = () => {
 

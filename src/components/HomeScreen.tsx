@@ -4,6 +4,10 @@ import NavBar from "./NavBar";
 import Table from "./Table";
 
 
+/**
+ *
+ * HomeScreen Component: This is the main screen of the app, hosting the SideBar and NavBar as child components.
+ */
 const HomeScreen = () => {
     const [visible, setVisible] = useState(false);
 

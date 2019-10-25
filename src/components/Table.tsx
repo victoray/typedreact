@@ -5,7 +5,7 @@ import Spinner from "./Spinner";
 
 const handleClick = (side: string, setPage: any, currentPage: number, totalPages: number) => {
     if (side === "right") {
-        (currentPage + 1 < totalPages + 1) ? setPage(currentPage + 1) : setPage(currentPage);
+        (currentPage < totalPages) ? setPage(currentPage + 1) : setPage(currentPage);
     }
     if (side === "left") {
         (currentPage - 1 > 0) ? setPage(currentPage - 1) : setPage(currentPage);
@@ -54,9 +54,9 @@ const Table = () => {
     }
 
     const species = (service.status === "loaded") && createTable(service.data);
-    const count = (service.status === "loaded") && service.data.count;
+    const count = (service.status === "loaded") && service.data.count || 0;
 
-    // @ts-ignore
+
     const pageTotal = Math.ceil(count / 10);
     const pages = _.range(1, pageTotal + 1).map((page) => {
         return (<div key={page} id={page.toString()} className={`link item ${(currentPage === page) && "active"}`}
@@ -64,7 +64,7 @@ const Table = () => {
     });
 
     return (
-        <table className="ui fixed single large line padded table unstackable selectable striped blue">
+        <table className="ui fixed  padded table unstackable selectable striped blue">
             <thead className={"full-width"}>
             <tr>
                 <th>Name</th>

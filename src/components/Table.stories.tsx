@@ -10,14 +10,13 @@ storiesOf("Table", module)
             info: {
                 text: `
 
-  ### Notes
-
+      ### Notes
+      ~~~js
       Data Loaded from https://swapi.co/api/species
-
-  ### Usage
-  ~~~js
-  ~~~
-
-`,
+      ~~~
+      ### Usage
+      ~~~js
+       Data is fetched from the api with axios, the data is paginated serverside, so the table requests data based on the current page.
+      ~~~`,
             },
         });

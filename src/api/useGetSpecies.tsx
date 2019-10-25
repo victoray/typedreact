@@ -1,26 +1,14 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
-import {Service} from "./types";
+import {Service, Specie} from "./types";
 
-
-export interface Specie {
-    url: string;
-    name: string;
-    classification: string;
-    designation: string;
-    average_height: string;
-    skin_colors: string;
-    hair_colors: string;
-    eye_colors: string;
-    average_lifespan: string;
-    language: string;
-}
 
 export interface Species {
     results: Specie [];
     count: number;
 }
 
+// custom hook for fetching data from swap api
 const useGetSpecies = (page: number) => {
 
     const [result, setResult] = useState<Service<Species>>({status: "loading"});
