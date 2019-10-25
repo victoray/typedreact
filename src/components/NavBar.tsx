@@ -1,21 +1,23 @@
 import React from "react";
 
 interface NavBarProps {
-    setVisible: any;
+    setVisible?: any;
     visible: boolean;
 }
 
-
+/*
+ *NavBar Component: Displays all menu items in  a horizontal navbar with a right alinged dropdown menu and a search bar;
+ */
 const NavBar = ({setVisible, visible}: NavBarProps) => {
 
     return (
-        <div className={"ui top fixed menu borderless"}>
+        <div className="ui top fixed menu">
             <a className="item" onClick={() => setVisible(!visible)}>
                 <i className="sidebar icon"/>
                 Menu
             </a>
-            <div className="ui right floated category search item">
-                <div className="ui large icon input">
+            <div className="ui  category search item">
+                <div className="ui large icon input" style={{width: "100%"}}>
                     <input className="prompt" type="text" placeholder="Search..."/>
                     <i className="search link icon"/>
                 </div>

@@ -4,7 +4,6 @@ import {Service} from "./types";
 
 
 export interface Specie {
-    homeworld: string;
     url: string;
     name: string;
     classification: string;
@@ -33,6 +32,7 @@ const useGetSpecies = (page: number) => {
                 setResult({data: response.data, status: "loaded"});
             } catch (error) {
                 setResult({error, status: "error"});
+                console.log(error);
             }
         })();
     }, [page]);

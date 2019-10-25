@@ -1,5 +1,9 @@
 import React from "react";
 
+
+/**
+ * Displays a spinning loaders during data loading.
+ */
 const Spinner = () => {
 
     return (

@@ -38,9 +38,6 @@ const createTable = (species: Species) => {
                     {specie.average_lifespan}
                 </td>
                 <td className="single line">
-                    {specie.homeworld}
-                </td>
-                <td className="single line">
                     {specie.language}
                 </td>
             </tr>);
@@ -52,28 +49,23 @@ const Table = () => {
     const [currentPage, setPage] = useState(1);
     const service = useGetSpecies(currentPage);
 
-    if (service.status === "loading") {
+    if (service.status !== "loaded") {
         return <Spinner/>;
     }
 
-    let species: {} | null | undefined = [];
-    let pages: {} | null | undefined;
-    let count = 1;
+    const species = (service.status === "loaded") && createTable(service.data);
+    const count = (service.status === "loaded") && service.data.count;
 
-    if (service.status === "loaded") {
-        species = createTable(service.data);
-        count = service.data.count;
-    }
-
+    // @ts-ignore
     const pageTotal = Math.ceil(count / 10);
-    pages = _.range(1, pageTotal + 1).map((page) => {
-        return (<div key={page} id={page.toString()} className={`link item ${(currentPage === page) ? "active" : ""}`}
+    const pages = _.range(1, pageTotal + 1).map((page) => {
+        return (<div key={page} id={page.toString()} className={`link item ${(currentPage === page) && "active"}`}
                      onClick={() => setPage(page)}>{page}</div>);
     });
 
     return (
-        <table className="ui fixed single line celled table">
-            <thead>
+        <table className="ui fixed single large line padded table unstackable selectable striped blue">
+            <thead className={"full-width"}>
             <tr>
                 <th>Name</th>
                 <th>Classification</th>
@@ -82,7 +74,6 @@ const Table = () => {
                 <th>Hair Colors</th>
                 <th>Eye Colors</th>
                 <th>Average Lifespan</th>
-                <th>Home World</th>
                 <th>Language</th>
             </tr>
             </thead>
@@ -91,15 +82,17 @@ const Table = () => {
             </tbody>
             <tfoot>
             <tr>
-                <th colSpan={9}>
+                <th colSpan={8}>
                     <div className="ui right floated pagination menu">
-                        <a onClick={() => handleClick("left", setPage, currentPage, pageTotal)} className="icon item">
+                        <div onClick={() => handleClick("left", setPage, currentPage, pageTotal)}
+                             className="link icon item">
                             <i className="left chevron icon"/>
-                        </a>
+                        </div>
                         {pages}
-                        <a onClick={() => handleClick("right", setPage, currentPage, pageTotal)} className="icon item">
+                        <div onClick={() => handleClick("right", setPage, currentPage, pageTotal)}
+                             className="link icon item">
                             <i className="right chevron icon"/>
-                        </a>
+                        </div>
                     </div>
                 </th>
             </tr>

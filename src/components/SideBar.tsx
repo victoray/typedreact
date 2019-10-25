@@ -5,9 +5,12 @@ interface SideBarProps {
     visible: boolean;
 }
 
+/**
+ * SideBar Component: Displays all menu items in  a left fixed sidebar.
+ */
 const SideBar = ({visible}: SideBarProps) => {
     return (
-        <div className={`ui ${(visible) ? "visible" : ""} sidebar left fixed vertical menu`}>
+        <div className={`ui ${visible && "visible"} sidebar left fixed vertical menu`}>
             <div className="item">
                 <img className="ui mini image" alt={""} src={"https://semantic-ui.com/images/logo.png"}/>
             </div>
