@@ -3,6 +3,15 @@ import useGetSpecies, {Species} from "../api/useGetSpecies";
 import _ from "lodash";
 import Spinner from "./Spinner";
 
+const handleClick = (side: string, setPage: any, currentPage: number, totalPages: number) => {
+    if (side === "right") {
+        (currentPage + 1 < totalPages + 1) ? setPage(currentPage + 1) : setPage(currentPage);
+    }
+    if (side === "left") {
+        (currentPage - 1 > 0) ? setPage(currentPage - 1) : setPage(currentPage);
+    }
+};
+
 const createTable = (species: Species) => {
     return species.results.map((specie) => {
         return (
@@ -58,7 +67,8 @@ const Table = () => {
 
     const pageTotal = Math.ceil(count / 10);
     pages = _.range(1, pageTotal + 1).map((page) => {
-        return (<div key={page} id={page.toString()} className="link item" onClick={() => setPage(page)}>{page}</div>);
+        return (<div key={page} id={page.toString()} className={`link item ${(currentPage === page) ? "active" : ""}`}
+                     onClick={() => setPage(page)}>{page}</div>);
     });
 
     return (
@@ -83,11 +93,11 @@ const Table = () => {
             <tr>
                 <th colSpan={9}>
                     <div className="ui right floated pagination menu">
-                        <a className="icon item">
+                        <a onClick={() => handleClick("left", setPage, currentPage, pageTotal)} className="icon item">
                             <i className="left chevron icon"/>
                         </a>
                         {pages}
-                        <a className="icon item">
+                        <a onClick={() => handleClick("right", setPage, currentPage, pageTotal)} className="icon item">
                             <i className="right chevron icon"/>
                         </a>
                     </div>
