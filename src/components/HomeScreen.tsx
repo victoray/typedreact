@@ -1,15 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import SideBar from "./SideBar";
 import NavBar from "./NavBar";
 
-const HomeScreen: React.FC = () => {
+
+const HomeScreen = () => {
+    const [visible, setVisible] = useState(false);
+
     return (
-        <div className={"ui grid"}>
-            <div className="two wide column">
-                <SideBar/>
-            </div>
-            <div className="fourteen wide column">
-                <NavBar/>
+        <div className={"container"}>
+            <SideBar visible={visible}/>
+            <NavBar setVisible={setVisible} visible={visible}/>
+            <div className="pusher">
             </div>
         </div>
     );

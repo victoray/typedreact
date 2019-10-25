@@ -1,9 +1,13 @@
-import React from "react";
 import {Link} from "react-router-dom";
+import React from "react";
 
-const SideBar: React.FC = () => {
+interface SideBarProps {
+    visible: boolean;
+}
+
+const SideBar = ({visible}: SideBarProps) => {
     return (
-        <div className="ui left fixed vertical menu">
+        <div className={`ui ${(visible) ? "visible" : ""} sidebar left fixed vertical menu`}>
             <div className="item">
                 <img className="ui mini image" alt={""} src={"https://semantic-ui.com/images/logo.png"}/>
             </div>

@@ -2,6 +2,9 @@ import React from "react";
 import {storiesOf} from "@storybook/react";
 
 import SideBar from "./SideBar";
+import {BrowserRouter} from "react-router-dom";
 
 storiesOf("SideBar", module)
-    .add("default", () => <SideBar/>);
+    .addDecorator((story) => <BrowserRouter> {story()}</BrowserRouter>)
+    .add("visible", () => <SideBar visible={true}/>)
+    .add("disabled", () => <SideBar visible={false}/>);

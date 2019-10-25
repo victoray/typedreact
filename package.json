@@ -3,20 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-knobs": "^5.2.5",
     "@types/jest": "^24.0.19",
     "@types/node": "12.11.6",
     "@types/react": "16.9.9",
     "@types/react-dom": "16.9.2",
     "@types/react-router-dom": "^5.1.0",
     "@types/storybook__react": "^4.0.2",
+    "history": "latest",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.1",
-    "typescript": "^3.6.4",
-    "history": "latest"
+    "typescript": "^3.6.4"
   },
   "scripts": {
     "start": "react-scripts-ts start",
@@ -58,6 +59,7 @@
     "@storybook/react": "^5.2.5",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
+    "eslint-plugin-react-hooks": "^2.2.0",
     "jest": "^24.9.0",
     "react-docgen-typescript-loader": "^3.3.0",
     "ts-jest": "^24.1.0"
