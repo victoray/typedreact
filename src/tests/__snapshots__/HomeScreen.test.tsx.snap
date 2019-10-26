@@ -69,15 +69,15 @@ exports[`should render correctly 1`] = `
         src="https://semantic-ui.com/images/logo.png"
       />
     </div>
-    <a
-      className="item"
+    <div
+      className="link item"
       onClick={[Function]}
     >
       <i
         className="sidebar icon"
       />
       Menu
-    </a>
+    </div>
     <div
       className="ui  category search item"
     >
