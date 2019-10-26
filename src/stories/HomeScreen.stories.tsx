@@ -1,7 +1,7 @@
 import React from "react";
 import {storiesOf} from "@storybook/react";
 
-import HomeScreen from "./HomeScreen";
+import HomeScreen from "../components/screens/HomeScreen";
 import {BrowserRouter} from "react-router-dom";
 
 storiesOf("HomeScreen", module)
