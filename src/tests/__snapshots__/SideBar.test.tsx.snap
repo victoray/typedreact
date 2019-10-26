@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be visible 1`] = `
+<div
+  className="ui visible sidebar left fixed vertical menu"
+>
+  <div
+    className="item"
+  >
+    <img
+      alt=""
+      className="ui mini image"
+      src="https://semantic-ui.com/images/logo.png"
+    />
+  </div>
+  <a
+    className="item"
+    href="/dashboard"
+    onClick={[Function]}
+  >
+    DashBoard 
+    <i
+      className="chart line icon"
+    />
+  </a>
+  <a
+    className="item"
+    href="/starwars"
+    onClick={[Function]}
+  >
+    StarWars 
+    <i
+      className="star icon"
+    />
+  </a>
+  <a
+    className="item"
+    href="/avengers"
+    onClick={[Function]}
+  >
+    Avengers 
+    <i
+      className="nintendo switch icon"
+    />
+  </a>
+  <a
+    className="item"
+    href="/settings"
+    onClick={[Function]}
+  >
+    Settings 
+    <i
+      className="cogs icon"
+    />
+  </a>
+</div>
+`;
+
+exports[`should not be visible 1`] = `
+<div
+  className="ui  sidebar left fixed vertical menu"
+>
+  <div
+    className="item"
+  >
+    <img
+      alt=""
+      className="ui mini image"
+      src="https://semantic-ui.com/images/logo.png"
+    />
+  </div>
+  <a
+    className="item"
+    href="/dashboard"
+    onClick={[Function]}
+  >
+    DashBoard 
+    <i
+      className="chart line icon"
+    />
+  </a>
+  <a
+    className="item"
+    href="/starwars"
+    onClick={[Function]}
+  >
+    StarWars 
+    <i
+      className="star icon"
+    />
+  </a>
+  <a
+    className="item"
+    href="/avengers"
+    onClick={[Function]}
+  >
+    Avengers 
+    <i
+      className="nintendo switch icon"
+    />
+  </a>
+  <a
+    className="item"
+    href="/settings"
+    onClick={[Function]}
+  >
+    Settings 
+    <i
+      className="cogs icon"
+    />
+  </a>
+</div>
+`;
