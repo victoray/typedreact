@@ -44,17 +44,19 @@ const createTable = (species: Species) => {
     });
 };
 
-interface Table {
-    status: string;
-}
 
 const Table = ({status = ""}) => {
     const [currentPage, setPage] = useState(1);
     const service = useGetSpecies(currentPage);
 
-    if (service.status !== "loaded" || status === "loading") {
+    if (service.status === "loading" || status === "loading") {
         return <Spinner/>;
     }
+
+    if (service.status === "error") {
+        return <Spinner message={service.error.message || status}/>;
+    }
+
 
     const species = (service.status === "loaded") && createTable(service.data);
     const count = (service.status === "loaded") && service.data.count || 0;
@@ -67,7 +69,7 @@ const Table = ({status = ""}) => {
     });
 
     return (
-        <table className="ui fixed padded table unstackable selectable striped blue">
+        <table className="ui fixed padded large table selectable striped blue">
             <thead className={"full-width"}>
             <tr>
                 <th>Name</th>

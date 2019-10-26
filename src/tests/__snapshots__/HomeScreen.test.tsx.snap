@@ -60,6 +60,15 @@ exports[`should render correctly 1`] = `
   <div
     className="ui top fixed menu borderless"
   >
+    <div
+      className="link item"
+    >
+      <img
+        alt=""
+        className="ui mini image"
+        src="https://semantic-ui.com/images/logo.png"
+      />
+    </div>
     <a
       className="item"
       onClick={[Function]}
@@ -135,7 +144,8 @@ exports[`should render correctly 1`] = `
         <div
           className="ui big text loader"
         >
-           Loading....
+           
+          Loading....
         </div>
       </div>
     </div>

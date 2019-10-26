@@ -4,6 +4,15 @@ exports[`should render correctly 1`] = `
 <div
   className="ui top fixed menu borderless"
 >
+  <div
+    className="link item"
+  >
+    <img
+      alt=""
+      className="ui mini image"
+      src="https://semantic-ui.com/images/logo.png"
+    />
+  </div>
   <a
     className="item"
     onClick={[Function]}
@@ -65,121 +74,129 @@ exports[`should render correctly 1`] = `
 `;
 
 exports[`should render correctly with sidebar 1`] = `
-<div
-  className="ui visible sidebar left fixed vertical menu"
->
+Array [
   <div
-    className="item"
-  >
-    <img
-      alt=""
-      className="ui mini image"
-      src="https://semantic-ui.com/images/logo.png"
-    />
-  </div>
-  <a
-    className="item"
-    href="/dashboard"
-    onClick={[Function]}
-  >
-    DashBoard 
-    <i
-      className="chart line icon"
-    />
-  </a>
-  <a
-    className="item"
-    href="/starwars"
-    onClick={[Function]}
-  >
-    StarWars 
-    <i
-      className="star icon"
-    />
-  </a>
-  <a
-    className="item"
-    href="/avengers"
-    onClick={[Function]}
-  >
-    Avengers 
-    <i
-      className="nintendo switch icon"
-    />
-  </a>
-  <a
-    className="item"
-    href="/settings"
-    onClick={[Function]}
-  >
-    Settings 
-    <i
-      className="cogs icon"
-    />
-  </a>
-</div>
-`;
-
-exports[`should render correctly with sidebar 2`] = `
-<div
-  className="ui top fixed menu borderless"
->
-  <a
-    className="item"
-    onClick={[Function]}
-  >
-    <i
-      className="sidebar icon"
-    />
-    Menu
-  </a>
-  <div
-    className="ui  category search item"
+    className="ui visible sidebar left fixed vertical menu"
   >
     <div
-      className="ui large icon input"
-    >
-      <input
-        className="prompt"
-        placeholder="Search..."
-        type="text"
-      />
-      <i
-        className="search link icon"
-      />
-    </div>
-  </div>
-  <div
-    className="right menu"
-  >
-    <div
-      className="ui simple dropdown  item"
+      className="item"
     >
       <img
         alt=""
-        className="ui avatar image"
-        src="https://semantic-ui.com/images/avatar/small/matt.jpg"
+        className="ui mini image"
+        src="https://semantic-ui.com/images/logo.png"
       />
-      <span>
-        Username
-      </span>
-       
+    </div>
+    <a
+      className="item"
+      href="/dashboard"
+      onClick={[Function]}
+    >
+      DashBoard 
       <i
-        className="dropdown icon"
+        className="chart line icon"
       />
+    </a>
+    <a
+      className="item"
+      href="/starwars"
+      onClick={[Function]}
+    >
+      StarWars 
+      <i
+        className="star icon"
+      />
+    </a>
+    <a
+      className="item"
+      href="/avengers"
+      onClick={[Function]}
+    >
+      Avengers 
+      <i
+        className="nintendo switch icon"
+      />
+    </a>
+    <a
+      className="item"
+      href="/settings"
+      onClick={[Function]}
+    >
+      Settings 
+      <i
+        className="cogs icon"
+      />
+    </a>
+  </div>,
+  <div
+    className="ui top fixed menu borderless"
+  >
+    <div
+      className="link item"
+    >
+      <img
+        alt=""
+        className="ui mini image"
+        src="https://semantic-ui.com/images/logo.png"
+      />
+    </div>
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      <i
+        className="sidebar icon"
+      />
+      Menu
+    </a>
+    <div
+      className="ui  category search item"
+    >
       <div
-        className="menu"
+        className="ui large icon input"
       >
+        <input
+          className="prompt"
+          placeholder="Search..."
+          type="text"
+        />
+        <i
+          className="search link icon"
+        />
+      </div>
+    </div>
+    <div
+      className="right menu"
+    >
+      <div
+        className="ui simple dropdown  item"
+      >
+        <img
+          alt=""
+          className="ui avatar image"
+          src="https://semantic-ui.com/images/avatar/small/matt.jpg"
+        />
+        <span>
+          Username
+        </span>
+         
+        <i
+          className="dropdown icon"
+        />
         <div
-          className="item link"
+          className="menu"
         >
-          Logout 
-          <i
-            className="sign-out icon"
-          />
+          <div
+            className="item link"
+          >
+            Logout 
+            <i
+              className="sign-out icon"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;

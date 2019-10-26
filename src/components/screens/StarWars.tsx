@@ -1,14 +1,14 @@
 import React, {useState} from "react";
-import SideBar from "./SideBar";
-import NavBar from "./NavBar";
-import Table from "./Table";
+import SideBar from "../SideBar";
+import NavBar from "../NavBar";
+import Table from "../Table";
 
 
 /**
  *
  * HomeScreen Component: This is the main screen of the app, hosting the SideBar and NavBar as child components.
  */
-const HomeScreen = () => {
+const StarWars = () => {
     const [visible, setVisible] = useState(false);
 
     return (
@@ -24,4 +24,4 @@ const HomeScreen = () => {
     );
 };
 
-export default HomeScreen;
+export default StarWars;

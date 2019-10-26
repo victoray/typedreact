@@ -13,6 +13,9 @@ const NavBar = ({setVisible, visible}: NavBarProps) => {
 
     return (
         <div className="ui top fixed menu borderless">
+            <div className="link item">
+                <img className="ui mini image" alt={""} src={"https://semantic-ui.com/images/logo.png"}/>
+            </div>
             <a className="item" onClick={() => setVisible(!visible)}>
                 <i className="sidebar icon"/>
                 Menu
