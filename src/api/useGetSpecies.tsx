@@ -14,7 +14,7 @@ const useGetSpecies = (page: number) => {
     const [result, setResult] = useState<Service<Species>>({status: "loading"});
 
     useEffect(() => {
-        (async () => {
+        (async (page) => {
             try {
                 const response = await axios.get(`https://swapi.co/api/species/?page=${page}`);
                 setResult({data: response.data, status: "loaded"});
@@ -22,7 +22,7 @@ const useGetSpecies = (page: number) => {
                 setResult({error, status: "error"});
                 console.log(error);
             }
-        })();
+        })(page);
     }, [page]);
 
     return result;

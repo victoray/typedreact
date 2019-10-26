@@ -59,7 +59,7 @@ const Table = ({status = ""}) => {
 
 
     const species = (service.status === "loaded") && createTable(service.data);
-    const count = (service.status === "loaded") && service.data.count || 0;
+    const count = ((service.status === "loaded") && service.data.count) || 0;
 
 
     const pageTotal = Math.ceil(count / 10);

@@ -16,10 +16,10 @@ const NavBar = ({setVisible, visible}: NavBarProps) => {
             <div className="link item">
                 <img className="ui mini image" alt={""} src={"https://semantic-ui.com/images/logo.png"}/>
             </div>
-            <a className="item" onClick={() => setVisible(!visible)}>
+            <div className="link item" onClick={() => setVisible(!visible)}>
                 <i className="sidebar icon"/>
                 Menu
-            </a>
+            </div>
             <div className="ui  category search item">
                 <div className="ui large icon input">
                     <input className="prompt" type="text" placeholder="Search..."/>
