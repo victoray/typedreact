@@ -10,7 +10,7 @@ interface SideBarProps {
  */
 const SideBar = ({visible}: SideBarProps) => {
     return (
-        <div className={`ui ${visible && "visible"} sidebar left fixed vertical menu`}>
+        <div className={`ui ${(visible) ? "visible" : ""} sidebar left fixed vertical menu`}>
             <div className="item">
                 <img className="ui mini image" alt={""} src={"https://semantic-ui.com/images/logo.png"}/>
             </div>
