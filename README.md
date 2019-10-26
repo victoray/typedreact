@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
  
- [Live Demo](https://victoray.github.io/typedreact/) <br/>
+ [Live Demo](https://typed-react.netlify.com/) <br/>
  [StoryBook Demo](https://storybook-typed-react.netlify.com)
 
 ## Available Scripts
