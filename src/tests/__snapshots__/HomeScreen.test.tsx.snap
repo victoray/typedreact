@@ -145,7 +145,7 @@ exports[`should render correctly 1`] = `
           className="ui big text loader"
         >
            
-          Loading....
+          Fetching Data
         </div>
       </div>
     </div>

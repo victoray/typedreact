@@ -6,9 +6,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  [Live Demo](https://typed-react.netlify.com/) <br/>
  [StoryBook Demo](https://storybook-typed-react.netlify.com)
 
+## Project Requirements
+Install the latest stable Node for your operating system. [Installation Guide](https://nodejs.org/en/download/)<br/>
+Install Yarn [Installation Guide](https://yarnpkg.com/lang/en/docs/install/). 
+
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+This will install all the project dependencies. <br/>
 
 ### `yarn start`
 
@@ -21,7 +29,17 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn storybook`
+
+Runs the storybook in the development mode.<br />
+Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
+
+### `yarn build-storybook`
+
+Builds the storybook for production to the `storybook-static` folder.<br />
+It correctly bundles all the stories in production mode and optimizes the build for the best performance.
+
 
 ### `yarn build`
 
@@ -43,15 +61,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## `yarn storybook`
 
-Runs the storybook in the development mode.<br />
-Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
-
-## `yarn build-storybook`
-
-Builds the storybook for production to the `storybook-static` folder.<br />
-It correctly bundles all the stories in production mode and optimizes the build for the best performance.
 
 
 ## Learn More
