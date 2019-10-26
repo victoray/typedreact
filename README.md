@@ -1,7 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-##Live Demo
+
+
+## Live Demo
  
- [Live Demo of the app](https://victoray.github.io/typedreact/)
+ [Live Demo of the app](https://victoray.github.io/typedreact/) <br/>
+ [StoryBook Demo](https://5db38c372d495b000a348339--storybook-typed-react.netlify.com/)
 
 ## Available Scripts
 
