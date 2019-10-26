@@ -50,7 +50,7 @@ const Table = ({status = ""}) => {
     const service = useGetSpecies(currentPage);
 
     if (service.status === "loading" || status === "loading") {
-        return <Spinner/>;
+        return <Spinner message={"Fetching Data"}/>;
     }
 
     if (service.status === "error") {

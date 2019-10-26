@@ -1,7 +1,7 @@
 import React from "react";
 import {storiesOf} from "@storybook/react";
 
-import SideBar from "./SideBar";
+import SideBar from "../components/SideBar";
 import {BrowserRouter} from "react-router-dom";
 
 storiesOf("SideBar", module)

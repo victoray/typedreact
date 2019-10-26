@@ -1,7 +1,7 @@
 import React from "react";
 import {storiesOf} from "@storybook/react";
 
-import Table from "./Table";
+import Table from "../components/Table";
 
 storiesOf("Table", module)
     .addDecorator((story) => <div style={{padding: "10rem"}}>{story()}</div>)
