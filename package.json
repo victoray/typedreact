@@ -13,6 +13,7 @@
     "react-scripts": "3.2.0",
     "semantic-ui-css": "^2.4.1",
     "storybook-chromatic": "^3.0.3",
+    "tslint-react": "^4.1.0",
     "typescript": "^3.6.4"
   },
   "scripts": {
@@ -22,7 +23,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "CHROMATIC_APP_CODE=dli1w9ceaev chromatic"
+    "chromatic": "CHROMATIC_APP_CODE=dli1w9ceaev chromatic",
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,6 +57,7 @@
     "jest": "^24.9.0",
     "react-docgen-typescript-loader": "^3.3.0",
     "react-test-renderer": "^16.11.0",
-    "require-context.macro": "^1.2.2"
+    "require-context.macro": "^1.2.2",
+    "tslint": "^5.20.0"
   }
 }
